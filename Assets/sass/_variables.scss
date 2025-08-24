@@ -1,1 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+$fuente:"Playfair Display", serif;
+$fondoprimario: #D9D9D9;
+$fondesecundario: #7A7A7A;
+$fondeterciario:#4A4A4A;
+$colorprimario:#7FA8B5;
+$colorsecundario:#5C6F73;
+$colorterciario:#AFCED9;
+$colorbotonprimario:#FFFFFF;
+$colorbotonsecundario:#2B2B2B;
+$colorbotonterciario:#E3C77E;
+
+
+/*VARIABLES*/
+*{
+    font-family: $fuente;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-transform:capitalize;
+}
