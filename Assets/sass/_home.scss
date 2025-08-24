@@ -1,1 +1,69 @@
 @use "variables" as v;
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 90%;
+        object-fit: cover;
+        border-radius: 35px;
+        padding: 30px;
+    }
+    .titulo_boton{
+        h1{
+            font-size: 3rem;
+            color:v.$colorprimario;}
+        button{
+            background-color: v.$colorprimario;
+            padding: 15px;
+            border:none;
+            border-radius: 5px;
+            &:hover{animation: zoom 0.5s ease forwards;
+                }
+            a{
+                list-style: none;
+                text-decoration: none;
+                color: v.$colorbotonprimario;
+                }
+            }
+        }
+    }
+                    @keyframes zoom{
+                        from {transform: scale(1);}
+                        to {transform: scale(1.1);}
+                    }
+
+
+.mujeres{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    
+    img{
+        width: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .titulo_texto{
+        margin: 20px;
+        h2{
+            font-size: 2.5rem;
+            color: v.$colorsecundario;}
+        p{
+            font-size: 1.5rem;
+            color: v.$colorbotonprimario
+        }
+    }
+}
+ .carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+ }

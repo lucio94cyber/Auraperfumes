@@ -2,8 +2,8 @@
 
 $fuente:"Playfair Display", serif;
 $fondoprimario: #D9D9D9;
-$fondesecundario: #7A7A7A;
-$fondeterciario:#4A4A4A;
+$fondosecundario: #c5c5c5;
+$fondoterciario:#4A4A4A;
 $colorprimario:#7FA8B5;
 $colorsecundario:#5C6F73;
 $colorterciario:#AFCED9;
@@ -22,4 +22,5 @@ $colorbotonterciario:#E3C77E;
 
 body{
     text-transform:capitalize;
+    background-color: $fondoprimario;
 }
