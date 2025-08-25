@@ -74,31 +74,21 @@
 }
 
 @media (min-width: 320px) and (max-width: 430px){
-    .main{
-
     img{max-width: 400px;
         width: 100%;
     }
-    .titulo_boton{
-
         .animate__animated{
             font-size: 1rem;
          }
-
         button{ 
             width: 50%;
             height: auto;
             font-size: 0.7rem;
             margin: 10px;
             padding: 10px;
-            &:hover{
-                }
-            a{
-                }
             }
         }
-    }
-}
+
 
 @media (min-width: 320px) and (max-width: 430px){
     .mujeres{
