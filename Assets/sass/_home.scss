@@ -7,11 +7,11 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    background-color: v.$fondosecundario;
     img{
-        width: 90%;
+        width: 100%;
         object-fit: cover;
-        border-radius: 35px;
-        padding: 30px;
+        padding: 40px;
     }
     .titulo_boton{
         h1{
@@ -45,6 +45,7 @@
     justify-items: center;
     align-items: center;
     padding: 10px;
+    background-color: v.$fondoterciario;
     
     img{
         width: 300px;
@@ -62,8 +63,12 @@
         }
     }
 }
- .carousel-item img {
+
+ .carousel-item{
+    img{
     width: 100%;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
+    object-position:60% 10%;
  }
+}
