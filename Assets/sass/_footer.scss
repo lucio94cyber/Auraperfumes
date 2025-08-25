@@ -10,10 +10,24 @@ footer{
         li{
             a{
                 img{
-                    max-width: 50px;
+                    max-width: 20px;
                     width: 100%;
                 }
             }
         } 
     }
 } 
+
+@media (min-width: 320px) and (max-width: 430px) {
+    footer{
+    ul{justify-content: center;
+        padding: 0;
+        li{
+            a{
+                img{
+                }
+            }
+        } 
+    }
+} 
+}

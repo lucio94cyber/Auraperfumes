@@ -20,10 +20,16 @@ footer ul {
   margin: 20px;
 }
 footer ul li a img {
-  max-width: 50px;
+  max-width: 20px;
   width: 100%;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  footer ul {
+    justify-content: center;
+    padding: 0;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -52,6 +58,24 @@ header ul li a:hover {
   outline: 2px solid #E3C77E;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    max-width: 100px;
+    width: 100%;
+  }
+  header ul {
+    justify-content: center;
+    padding: 0;
+  }
+  header ul li a {
+    font-size: 0.8rem;
+  }
+}
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -124,6 +148,52 @@ header ul li a:hover {
   height: 400px;
   object-fit: cover;
   object-position: 60% 10%;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .main img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .main .titulo_boton .animate__animated {
+    font-size: 1rem;
+  }
+  .main .titulo_boton button {
+    width: 50%;
+    height: auto;
+    font-size: 0.7rem;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .mujeres {
+    display: flex;
+    flex-direction: column;
+  }
+  .mujeres img {
+    max-width: 180px;
+    width: 100%;
+  }
+  .mujeres .titulo_texto {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mujeres .titulo_texto h2 {
+    font-size: 1.2rem;
+  }
+  .mujeres .titulo_texto p {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .carousel-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: 60% 10%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
