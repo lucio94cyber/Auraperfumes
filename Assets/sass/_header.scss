@@ -37,13 +37,13 @@ header {
   header{display: flex;
     flex-direction: column;
     align-items: center;
-    img{max-width: 100px;
+    img{max-width: 120px;
       width: 100%;
     }
     ul{justify-content: center;
       padding: 0;
       li{
-        a{font-size: 0.8rem;
+        a{font-size: 0.9rem;
         }
       }
     }
