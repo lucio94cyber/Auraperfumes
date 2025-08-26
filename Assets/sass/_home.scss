@@ -126,10 +126,13 @@
 }
 
 .whatsapp{
-    position: fixed;
+    position: fixed; 
+    bottom: 20px; /*20 píxeles desde el borde inferior de la ventana.*/
+    right: 20px; /*20 píxeles desde el borde derecho de la ventana.*/
+    z-index: 1; /* para que quede encima */
 
      img{
-        width: 100%;
+        width: 40px;
         height: auto;
 
      }
