@@ -99,8 +99,10 @@
     .mujeres{
         display: flex;
         flex-direction: column;
+        padding: 0;
 
-    img{max-width: 400px;
+    img{
+        border-radius: 0;
         width: 100%;
     }
     .titulo_texto{justify-content: center;

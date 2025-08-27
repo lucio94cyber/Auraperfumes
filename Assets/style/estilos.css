@@ -77,6 +77,41 @@ header ul li a:hover {
     font-size: 0.9rem;
   }
 }
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin: 20px;
+}
+.shop h1 {
+  grid-column: 1/4;
+  text-align: center;
+  margin-top: 20px;
+  color: #5C6F73;
+}
+.shop ul {
+  display: contents;
+  list-style: none;
+}
+.shop ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  color: #5C6F73;
+}
+.shop ul img {
+  max-width: 250px;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -176,9 +211,10 @@ header ul li a:hover {
   .mujeres {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .mujeres img {
-    max-width: 400px;
+    border-radius: 0;
     width: 100%;
   }
   .mujeres .titulo_texto {
