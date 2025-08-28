@@ -1,24 +1,22 @@
 @use "variables" as v;
 
 .main{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
+    background-image: url(../img/banner2.png);
+    background-size: cover; /* para que ocupe todo */
+    background-position: center;
+    height: 400px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    background-color: v.$fondosecundario;
-    img{
-        width: 100%;
-        object-fit: cover;
-        padding: 40px;
-    }
+
     .titulo_boton{
         h1{
             font-size: 3rem;
-            color:v.$colorprimario;}
+            color:v.$colorbotonterciario;}
         button{
-            background-color: v.$colorprimario;
+            margin-top: 15px;
+            background-color: v.$colorbotonterciario;
             padding: 15px;
             border:none;
             border-radius: 5px;
@@ -75,8 +73,10 @@
 
 @media (min-width: 320px) and (max-width: 430px){
     .main{
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
+        height: 250px;
     img{max-width: 350px;
         width: 100%;
     }
