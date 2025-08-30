@@ -11,18 +11,57 @@
     <title>AURA perfumes</title>
 </head>
 <body>
-<header>
+<header class="navs">
 
     <img src="../logo/logo.png" alt="logo">
 
     <ul>
       <li><a href="../../index.html">home</a></li>
-        <li><a href="../pages/about.html">about</a></li>
         <li><a href="../pages/shop.html">shop</a></li>
         <li><a href="../pages/contact.html">contact</a></li>
     </ul>
 
 </header>
+
+<main class="contacto">
+
+  <form id="formulario" class="formulario">
+    <label>Nombre y Apellido</label>
+    <input type="text" id="nombre" placeholder="Nombre y Apellido">
+    <label>Domicilio</label>
+    <input type="text" id="Domicilio" placeholder="Domicilio">
+    <label>Telefono</label>
+    <input type="number" id="Telefono" placeholder="Telefono">
+    <label>Hace tu pedido</label>
+    <textarea id="pedido" placeholder="Hace tu pedido"></textarea>
+
+    <div class="confirmacion_de_pedido">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Reset">
+    </div>
+
+  </form>
+
+  <div class="logos">
+    <img src="../logo/logo.png" alt="logos">
+  </div>
+
+</main>
+
+<section class="videos_3">
+  <div class="video">
+    <span>elegancia</span>
+    <video autoplay muted loop playsinline src="../videos/mirada2.mp4"></video>
+  </div>
+  <div class="video">
+    <span>nocturno</span>
+    <video autoplay muted loop playsinline src="../videos/perfumes_spray.mp4"></video>
+  </div>
+  <div class="video">
+    <span>luz</span>
+    <video autoplay muted loop playsinline src="../videos/mirada3.mp4"></video>
+  </div>
+</section>
 
 <section>
   <a href="https://web.whatsapp.com/" class="whatsapp" target="_blank">
@@ -30,7 +69,7 @@
   </a>
 </section>
 
-<footer>
+<footer class="footer">
         <ul>
             <li>
                 <a href="https://www.instagram.com/" target="_blank">
@@ -53,5 +92,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
 crossorigin="anonymous"></script>
+<script src="../javascript/formulario.js"></script>
 </body>
 </html>

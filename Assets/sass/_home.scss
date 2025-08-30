@@ -1,23 +1,26 @@
 @use "variables" as v;
 
-.main{
+.principal{
     background-image: url(../img/banner2.png);
     background-size: cover; /* para que ocupe todo */
     background-position: center;
     height: 400px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items:center;
+    justify-content:left;
+    text-align:left;
 
     .titulo_boton{
+        margin: 20px;
         h1{
-            font-size: 3rem;
+            font-size: 2.8rem;
+            max-width: 400px;
             color:v.$colorbotonterciario;}
         button{
-            margin-top: 15px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+            margin-top: 10px;
             background-color: v.$colorbotonterciario;
-            padding: 15px;
+            padding: 10px;
             border:none;
             border-radius: 5px;
             &:hover{animation: zoom 0.5s ease forwards;
@@ -35,6 +38,27 @@
                         to {transform: scale(1.1);}
                     }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .principal{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    img{max-width: 350px;
+        width: 100%;
+    }
+    .titulo_boton{
+
+        h1{
+            font-size: 1.5rem;
+         }
+        button{ 
+            width: 30%;
+            height: auto;
+            font-size: 1rem;
+            padding: 5px;
+            }}
+        }}
 
 .mujeres{
     display: grid;
@@ -43,7 +67,7 @@
     justify-items: center;
     align-items: center;
     padding: 10px;
-    background-color: v.$fondoterciario;
+    background-color: v.$fondoprimario;
     
     img{
         width: 300px;
@@ -54,46 +78,13 @@
         margin: 20px;
         h2{
             font-size: 2.5rem;
-            color: v.$colorsecundario;}
+            color: v.$colorbotonterciario;}
         p{
             font-size: 1.5rem;
             color: v.$colorbotonprimario
         }
     }
 }
-
- .carousel-item{
-    img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    object-position:60% 10%;
- }
-}
-
-@media (min-width: 320px) and (max-width: 430px){
-    .main{
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        height: 250px;
-    img{max-width: 350px;
-        width: 100%;
-    }
-    .titulo_boton{
-
-        h1{padding: 10px;
-            font-size: 1.5rem;
-            
-         }
-        button{ 
-            width: 30%;
-            height: auto;
-            font-size: 1rem;
-            padding: 5px;
-            }}
-        }}
-
 
 @media (min-width: 320px) and (max-width: 430px){
     .mujeres{
@@ -105,7 +96,8 @@
         border-radius: 0;
         width: 100%;
     }
-    .titulo_texto{justify-content: center;
+    .titulo_texto{
+        justify-content: center;
         align-items: center;
         text-align: center;
 
@@ -114,6 +106,16 @@
         p{font-size: 1rem;}
     }
 }
+}
+
+ .carousel-item{
+
+    img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position:60% 10%;
+ }
 }
 
 @media (min-width: 320px) and (max-width: 430px){
@@ -138,4 +140,68 @@
         height: auto;
 
      }
+}
+
+.frescura{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+
+        h2{
+        font-size: 2.5rem;
+        grid-column: 1/4;
+        color: v.$colorbotonterciario;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    ul{display: contents;
+        list-style: none;
+
+        li{
+            display: flex;
+            justify-content: center;
+            img{
+                margin-top: 10px;
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+                padding: 5px;
+    }
+}
+}
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .frescura{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr;
+        justify-content: center;
+        justify-items: center;
+
+        h2{grid-column: 1/4;
+            font-size: 1.5rem;
+            padding: 10px;
+
+        }
+
+        ul{
+        
+        li{
+            grid-row: 2/2;
+            
+
+            img{
+                max-width: 350px;
+                width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+
+            }
+        }
+    }
+}
 }
