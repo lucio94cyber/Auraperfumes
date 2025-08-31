@@ -114,7 +114,6 @@ footer ul li a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -10px;
   }
   .navs img {
     max-width: 120px;
