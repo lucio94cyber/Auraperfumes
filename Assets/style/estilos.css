@@ -78,6 +78,21 @@ body {
   font-weight: bold;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .foto_contacto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .foto_contacto img {
+    width: 430px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .foto_contacto p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 footer ul {
   display: flex;
   justify-content: center;
