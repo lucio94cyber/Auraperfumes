@@ -10,6 +10,7 @@ footer{
         li{
             a{
                 img{
+                    filter: brightness(0) invert(1);
                     max-width: 20px;
                     width: 100%;
                 }
