@@ -1,8 +1,8 @@
 @use "variables" as v;
 
 .principal{
-    background-image: url(../img/banner2.png);
-    background-size: cover; /* para que ocupe todo */
+    background-image: url(../img/fondo_home.png);
+    background-size: 90%; /* para que ocupe todo */
     background-position: center;
     height: 400px;
     display: flex;
@@ -40,6 +40,7 @@
 
 @media (min-width: 320px) and (max-width: 430px){
     .principal{
+        background-size: cover;
         margin-top: 10px;
         display: flex;
         flex-direction: column;

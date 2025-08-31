@@ -13,91 +13,52 @@ body {
   background-color: #2f506c;
 }
 
-.contacto {
+.body_contacto {
+  background-image: url(../img/fondo_contacto.png);
+  background-size: 50%;
+}
+.body_contacto .contacto {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.contacto .formulario {
+.body_contacto .contacto .formulario {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.contacto .formulario label {
+.body_contacto .contacto .formulario label {
   color: #E3C77E;
   font-size: 1rem;
+  font-weight: bold;
 }
-.contacto .formulario input {
+.body_contacto .contacto .formulario input {
   width: 300px;
 }
-.contacto .formulario textarea {
+.body_contacto .contacto .formulario textarea {
   width: 300px;
 }
-.contacto .formulario .confirmacion_de_pedido {
+.body_contacto .contacto .formulario .confirmacion_de_pedido {
   display: flex;
   gap: 10px;
   max-width: 150px;
   width: 100%;
   padding: 5px;
 }
-.contacto .formulario .confirmacion_de_pedido input {
+.body_contacto .contacto .formulario .confirmacion_de_pedido input {
   background-color: #E3C77E;
 }
-.contacto .logos img {
+.body_contacto .contacto .logos img {
   max-width: 500px;
   width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
-  .contacto {
+  .body_contacto {
+    background-size: cover;
+  }
+  .body_contacto .contacto {
     margin: 10px;
-  }
-}
-.videos_3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.videos_3 .video {
-  grid-row: 1/1;
-  margin: 0 auto;
-}
-.videos_3 .video span {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 20%;
-  left: 5%;
-  color: #E3C77E;
-}
-.videos_3 .video video {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  object-fit: cover;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-@media (min-width: 320px) and (max-width: 430px) {
-  .videos_3 {
-    display: flex;
-    flex-direction: column;
-  }
-  .videos_3 .video {
-    position: relative;
-  }
-  .videos_3 .video span {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #2f506c;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  .videos_3 .video video {
-    max-width: 300px;
-    width: 100%;
-    object-fit: cover;
   }
 }
 footer ul {
@@ -153,6 +114,7 @@ footer ul li a img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: -10px;
   }
   .navs img {
     max-width: 120px;
@@ -167,24 +129,28 @@ footer ul li a img {
     font-size: 0.9rem;
   }
 }
-.shop {
+.body_shop {
+  background-image: url(../img/banner2.png);
+  background-size: 100%;
+}
+.body_shop .shop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   margin: 20px;
   justify-content: center;
 }
-.shop h1 {
+.body_shop .shop h1 {
   grid-column: 1/4;
   text-align: center;
   margin-top: 20px;
   color: #E3C77E;
 }
-.shop ul {
+.body_shop .shop ul {
   display: contents;
   list-style: none;
 }
-.shop ul li {
+.body_shop .shop ul li {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -194,7 +160,7 @@ footer ul li a img {
   margin-top: 20px;
   color: #E3C77E;
 }
-.shop ul img {
+.body_shop .shop ul img {
   max-width: 250px;
   width: 100%;
   height: 350px;
@@ -204,10 +170,9 @@ footer ul li a img {
   box-shadow: 0 0 5px rgba(250, 249, 249, 0.712);
   padding: 10px;
 }
-.shop ul img:hover {
+.body_shop .shop ul img:hover {
   animation: zoomcolor 0.5s ease-in forwards;
 }
-
 @keyframes zoomcolor {
   from {
     transform: scale(1);
@@ -218,25 +183,29 @@ footer ul li a img {
     filter: brightness(1.1) saturate(1.1);
   }
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
-  .shop {
+  .body_shop {
+    background-size: cover;
+  }
+  .body_shop .shop {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .shop h1 {
+  .body_shop .shop h1 {
     grid-column: 1/1;
   }
-  .shop ul li {
+  .body_shop .shop ul li {
     font-size: 1.5rem;
   }
-  .shop ul li img {
+  .body_shop .shop ul li img {
     width: 250px;
     height: 300px;
   }
 }
 .principal {
-  background-image: url(../img/banner2.png);
-  background-size: cover; /* para que ocupe todo */
+  background-image: url(../img/fondo_home.png);
+  background-size: 90%; /* para que ocupe todo */
   background-position: center;
   height: 400px;
   display: flex;
@@ -279,6 +248,7 @@ footer ul li a img {
 }
 @media (min-width: 320px) and (max-width: 430px) {
   .principal {
+    background-size: cover;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
