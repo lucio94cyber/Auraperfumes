@@ -238,7 +238,7 @@ footer ul li a img {
 }
 .principal {
   background-image: url(../img/fondo_home.png);
-  background-size: 90%; /* para que ocupe todo */
+  background-size: 100%; /* para que ocupe todo */
   background-position: center;
   height: 400px;
   display: flex;
