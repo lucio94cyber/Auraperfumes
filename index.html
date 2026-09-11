@@ -4,15 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta
 name="description"
-content="AURA perfumes — fragancias creadas para dejar una presencia."
+content="AURA perfumes. Fragancias creadas para dejar una presencia."
 >
 
-<meta name="theme-color" content="#f4f0e8">
+<meta name="theme-color" content="#f5f2eb">
 
 <link rel="icon" href="Assets/logo/logo.png" type="image/png">
 
@@ -20,16 +19,13 @@ content="AURA perfumes — fragancias creadas para dejar una presencia."
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
-href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
 rel="stylesheet"
 >
 
-<link
-rel="stylesheet"
-href="Assets/style/estilos.css"
->
+<link rel="stylesheet" href="Assets/style/estilos.css">
 
-<title>AURA — Perfume eterno</title>
+<title>AURA | Perfumes</title>
 
 </head>
 
@@ -37,27 +33,16 @@ href="Assets/style/estilos.css"
 <body>
 
 
-<!-- HEADER -->
-
-<header class="aura-header">
+<header class="site-header">
 
 <div class="header-inner">
 
-<a
-href="./index.html"
-class="aura-logo"
-aria-label="AURA perfumes"
->
-
-<img
-src="Assets/logo/logo.png"
-alt="AURA perfumes"
->
-
+<a href="./index.html" class="brand">
+<img src="Assets/logo/logo.png" alt="AURA Perfumes">
 </a>
 
 
-<nav class="desktop-nav">
+<nav class="main-nav">
 
 <a href="./index.html" class="active">
 Inicio
@@ -76,7 +61,7 @@ Contacto
 
 <a
 href="Assets/pages/shop.html"
-class="header-cta"
+class="discover-button"
 >
 Descubrir
 </a>
@@ -97,10 +82,7 @@ aria-label="Abrir menú"
 </div>
 
 
-<div
-class="mobile-menu"
-id="mobileMenu"
->
+<div class="mobile-nav" id="mobileNav">
 
 <a href="./index.html">
 Inicio
@@ -128,67 +110,49 @@ WhatsApp
 
 
 
-<!-- HERO -->
-
 <main>
 
 
-<section class="hero-aura">
+<!-- HERO -->
 
-<div class="hero-image">
+<section class="minimal-hero">
 
-<img
-src="Assets/img/fondo_home.png"
-alt="AURA perfumes"
->
+<div class="hero-copy">
 
-</div>
-
-
-<div class="hero-overlay"></div>
-
-
-<div class="hero-content">
-
-<span class="eyebrow">
-AURA / PERFUMERÍA
+<span class="small-label">
+AURA / PERFUMES
 </span>
 
+
 <h1>
-
-Perfume eterno,
+La esencia
 <br>
-
-<span>como tu presencia.</span>
-
+de una <em>presencia.</em>
 </h1>
 
 
 <p>
-
-Una fragancia puede desaparecer.
-<br>
-La presencia que deja, no.
-
+Fragancias creadas para acompañarte
+y permanecer en la memoria.
 </p>
 
 
-<div class="hero-actions">
+<div class="hero-buttons">
 
 <a
 href="Assets/pages/shop.html"
-class="button button-dark"
+class="primary-button"
 >
-Explorar colección
+Descubrir colección
 <span>↗</span>
 </a>
 
 
 <a
-href="#historia"
-class="text-link"
+href="#universo"
+class="simple-link"
 >
-Conocé AURA
+Conocer AURA
 </a>
 
 </div>
@@ -196,115 +160,121 @@ Conocé AURA
 </div>
 
 
-<div class="hero-number">
-01
+<div class="hero-product">
+
+<div class="hero-product-image">
+
+<img
+src="Assets/img/fondo_home.png"
+alt="Perfume AURA"
+>
+
 </div>
 
 
-<div class="hero-scroll">
-Scroll para descubrir
-<span></span>
+<div class="hero-caption">
+
+<span>
+01 / SIGNATURE
+</span>
+
+<strong>
+AURA
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="hero-side-text">
+PERFUMERÍA BOUTIQUE
 </div>
 
 </section>
 
 
 
-<!-- STATEMENT -->
+<!-- INTRO -->
 
-<section
-class="statement"
-id="historia"
->
+<section class="intro-section" id="universo">
 
-<div class="statement-number">
-AURA
+<div class="intro-label">
+01 / EL UNIVERSO AURA
 </div>
 
 
-<div class="statement-copy">
-
-<span class="eyebrow">
-UNA FORMA DE SENTIR
-</span>
+<div class="intro-content">
 
 <h2>
-Brilla con tu
-<em>esencia.</em>
+No es solamente
+<br>
+un aroma.
+<br>
+Es lo que <em>dejás.</em>
 </h2>
 
+
+<div class="intro-description">
+
 <p>
-
-AURA nace de una idea simple:
-crear aromas que acompañen momentos,
-historias y recuerdos.
-
-No se trata solamente de oler bien.
-Se trata de dejar una impresión.
-
+Una fragancia tiene la capacidad de transformar
+un momento en recuerdo.
 </p>
+
+<p>
+AURA nace para acompañar esa sensación:
+elegancia, identidad y una presencia que permanece.
+</p>
+
 
 <a
 href="Assets/pages/shop.html"
-class="arrow-link"
+class="text-arrow"
 >
-Ver colección
+Explorar fragancias
 <span>→</span>
 </a>
 
 </div>
 
+</div>
+
 </section>
 
 
 
-<!-- EDITORIAL -->
+<!-- IMAGEN EDITORIAL -->
 
-<section class="editorial">
+<section class="editorial-block">
 
-<div class="editorial-image image-one">
+<div class="editorial-photo">
 
 <img
 src="Assets/img/mujer1.png"
-alt="Elegancia AURA"
+alt="AURA perfumes"
 loading="lazy"
 >
 
 </div>
 
 
-<div class="editorial-copy">
+<div class="editorial-message">
 
-<span class="editorial-index">
+<span>
 02 / PRESENCIA
 </span>
 
 <h2>
-Elegancia
+Tu aroma
 <br>
-que se <em>siente.</em>
+también <em>habla.</em>
 </h2>
 
 <p>
-
-Un aroma puede transformar la forma
-en que recordamos un instante.
-
-AURA acompaña cada momento
-sin pedir permiso.
-
+Elegí una fragancia que se convierta
+en parte de tu identidad.
 </p>
-
-</div>
-
-
-<div class="editorial-image image-two">
-
-<img
-src="Assets/img/mujer2.png"
-alt="Esencia AURA"
-loading="lazy"
->
 
 </div>
 
@@ -314,87 +284,75 @@ loading="lazy"
 
 <!-- CARRUSEL -->
 
-<section class="visual-story">
+<section class="campaign-section">
 
-<div class="visual-header">
+<div class="campaign-heading">
 
 <div>
 
-<span class="eyebrow">
-03 / UNIVERSO AURA
+<span>
+03 / AURA
 </span>
 
 <h2>
-Una historia en
-<em>cada aroma.</em>
+Una historia.
+<br>
+Una <em>esencia.</em>
 </h2>
 
 </div>
 
-<span class="visual-count">
-03 — 05
-</span>
 
-</div>
+<div class="campaign-controls">
 
-
-<div class="aura-carousel">
-
-<div class="carousel-track">
-
-<div class="carousel-slide active">
-
-<img
-src="Assets/img/carrousel1.png"
-alt="AURA colección"
-loading="lazy"
->
-
-</div>
-
-<div class="carousel-slide">
-
-<img
-src="Assets/img/carrousel2.png"
-alt="AURA fragancias"
-loading="lazy"
->
-
-</div>
-
-<div class="carousel-slide">
-
-<img
-src="Assets/img/carrousel3.png"
-alt="AURA perfume"
-loading="lazy"
->
-
-</div>
-
-</div>
-
-
-<button
-class="carousel-arrow prev"
-id="prevSlide"
-aria-label="Anterior"
->
+<button id="previous">
 ←
 </button>
 
-<button
-class="carousel-arrow next"
-id="nextSlide"
-aria-label="Siguiente"
->
+<button id="next">
 →
 </button>
 
+</div>
 
-<div class="carousel-progress">
+</div>
 
-<span class="progress-active"></span>
+
+<div class="campaign-slider">
+
+<div class="campaign-track">
+
+<div class="campaign-slide active">
+
+<img
+src="Assets/img/carrousel1.png"
+alt="AURA"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="campaign-slide">
+
+<img
+src="Assets/img/carrousel2.png"
+alt="AURA"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="campaign-slide">
+
+<img
+src="Assets/img/carrousel3.png"
+alt="AURA"
+loading="lazy"
+>
+
+</div>
 
 </div>
 
@@ -404,15 +362,15 @@ aria-label="Siguiente"
 
 
 
-<!-- COLECCIÓN PREVIEW -->
+<!-- COLECCIÓN -->
 
-<section class="collection-preview">
+<section class="home-collection">
 
-<div class="collection-header">
+<div class="collection-heading">
 
 <div>
 
-<span class="eyebrow">
+<span>
 04 / COLECCIÓN
 </span>
 
@@ -423,26 +381,27 @@ Encontrá tu
 
 </div>
 
+
 <a
 href="Assets/pages/shop.html"
-class="arrow-link"
+class="text-arrow"
 >
-Ver todos
+Ver colección
 <span>→</span>
 </a>
 
 </div>
 
 
-<div class="perfume-showcase">
+<div class="featured-products">
 
 
 <a
 href="Assets/pages/shop.html"
-class="perfume-feature"
+class="featured-product featured-large"
 >
 
-<div class="perfume-image">
+<div class="featured-image">
 
 <img
 src="Assets/img/perfume1.png"
@@ -452,11 +411,10 @@ loading="lazy"
 
 </div>
 
-<div class="perfume-meta">
 
-<span>
-01
-</span>
+<div class="featured-info">
+
+<span>01</span>
 
 <div>
 
@@ -470,9 +428,9 @@ La firma de AURA.
 
 </div>
 
-<span>
+<strong>
 ↗
-</span>
+</strong>
 
 </div>
 
@@ -482,10 +440,10 @@ La firma de AURA.
 
 <a
 href="Assets/pages/shop.html"
-class="perfume-feature"
+class="featured-product"
 >
 
-<div class="perfume-image">
+<div class="featured-image">
 
 <img
 src="Assets/img/perfume2.png"
@@ -495,11 +453,10 @@ loading="lazy"
 
 </div>
 
-<div class="perfume-meta">
 
-<span>
-02
-</span>
+<div class="featured-info">
+
+<span>02</span>
 
 <div>
 
@@ -513,9 +470,9 @@ Misterio y personalidad.
 
 </div>
 
-<span>
+<strong>
 ↗
-</span>
+</strong>
 
 </div>
 
@@ -525,10 +482,10 @@ Misterio y personalidad.
 
 <a
 href="Assets/pages/shop.html"
-class="perfume-feature"
+class="featured-product"
 >
 
-<div class="perfume-image">
+<div class="featured-image">
 
 <img
 src="Assets/img/perfume3.png"
@@ -538,11 +495,10 @@ loading="lazy"
 
 </div>
 
-<div class="perfume-meta">
 
-<span>
-03
-</span>
+<div class="featured-info">
+
+<span>03</span>
 
 <div>
 
@@ -551,68 +507,17 @@ Oasis Nocturno
 </h3>
 
 <p>
-Profundo. Intenso. Único.
+Profundo e intenso.
 </p>
 
 </div>
 
-<span>
+<strong>
 ↗
-</span>
+</strong>
 
 </div>
 
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- EXPERIENCIA -->
-
-<section class="experience-aura">
-
-<div class="experience-image">
-
-<img
-src="Assets/img/perfume_medio.png"
-alt="AURA perfume"
-loading="lazy"
->
-
-</div>
-
-
-<div class="experience-copy">
-
-<span class="eyebrow">
-05 / EL DETALLE
-</span>
-
-<h2>
-Tu aroma.
-<br>
-Tu <em>historia.</em>
-</h2>
-
-<p>
-
-Elegí una fragancia que hable de vos,
-de tus momentos y de la forma en que
-querés ser recordado.
-
-</p>
-
-<a
-href="https://wa.me/5491164227116"
-target="_blank"
-rel="noopener"
-class="button button-outline"
->
-Consultar por WhatsApp
-<span>↗</span>
 </a>
 
 </div>
@@ -623,11 +528,11 @@ Consultar por WhatsApp
 
 <!-- CTA -->
 
-<section class="aura-cta">
+<section class="final-cta">
 
-<div class="cta-inner">
+<div>
 
-<span class="eyebrow">
+<span>
 AURA PERFUMES
 </span>
 
@@ -637,14 +542,14 @@ Dejá una
 </h2>
 
 <p>
-Descubrí la fragancia que habla por vos.
+Descubrí la fragancia que habla de vos.
 </p>
 
 <a
 href="Assets/pages/shop.html"
-class="button button-light"
+class="light-button"
 >
-Descubrir AURA
+Descubrir colección
 <span>↗</span>
 </a>
 
@@ -652,15 +557,15 @@ Descubrir AURA
 
 </section>
 
+
 </main>
 
 
 
-<!-- FOOTER -->
+<footer>
 
-<footer class="aura-footer">
+<div class="footer-content">
 
-<div class="footer-main">
 
 <div class="footer-brand">
 
@@ -670,9 +575,7 @@ alt="AURA"
 >
 
 <p>
-Perfume eterno,
-<br>
-como tu presencia.
+La esencia de una presencia.
 </p>
 
 </div>
@@ -723,10 +626,10 @@ Hacer un pedido
 <div class="footer-column">
 
 <span>
-SEGUINOS
+SOCIAL
 </span>
 
-<div class="social-icons">
+<div class="social">
 
 <a
 href="https://www.instagram.com/"
@@ -784,14 +687,12 @@ Diseño y desarrollo web · AlwaysHouse
 
 
 
-<!-- WHATSAPP -->
-
 <a
 href="https://wa.me/5491164227116"
-class="whatsapp-aura"
+class="floating-whatsapp"
 target="_blank"
 rel="noopener"
-aria-label="Contactar por WhatsApp"
+aria-label="WhatsApp"
 >
 
 <img
@@ -802,8 +703,8 @@ alt=""
 </a>
 
 
-
 <script src="Assets/javascript/aura.js"></script>
 
 </body>
+
 </html>
