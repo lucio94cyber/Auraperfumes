@@ -1,258 +1,215 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =========================
-       MENÚ MOBILE
-    ========================= */
 
-    const menuButton =
-        document.getElementById("menuButton");
+/* =========================
+   MENÚ MOBILE
+========================= */
 
-    const mobileMenu =
-        document.getElementById("mobileMenu");
+const menuButton =
+document.getElementById("menuButton");
 
+const mobileNav =
+document.getElementById("mobileNav");
 
-    if (menuButton && mobileMenu) {
 
-        menuButton.addEventListener("click", () => {
+if(menuButton && mobileNav){
 
-            mobileMenu.classList.toggle("open");
+menuButton.addEventListener("click", () => {
 
-            menuButton.classList.toggle("open");
+mobileNav.classList.toggle("open");
 
-        });
+menuButton.classList.toggle("open");
 
+});
 
-        mobileMenu
-            .querySelectorAll("a")
-            .forEach(link => {
 
-                link.addEventListener("click", () => {
+mobileNav
+.querySelectorAll("a")
+.forEach(link => {
 
-                    mobileMenu.classList.remove("open");
+link.addEventListener("click", () => {
 
-                    menuButton.classList.remove("open");
+mobileNav.classList.remove("open");
 
-                });
+menuButton.classList.remove("open");
 
-            });
+});
 
-    }
+});
 
+}
 
-    /* =========================
-       CARRUSEL
-    ========================= */
 
-    const slides =
-        document.querySelectorAll(
-            ".carousel-slide"
-        );
 
-    const nextButton =
-        document.getElementById("nextSlide");
+/* =========================
+   CARRUSEL
+========================= */
 
-    const prevButton =
-        document.getElementById("prevSlide");
+const slides =
+document.querySelectorAll(
+".campaign-slide"
+);
 
-    const progress =
-        document.querySelector(
-            ".progress-active"
-        );
+const next =
+document.getElementById("next");
 
-    const counter =
-        document.querySelector(
-            ".visual-count"
-        );
+const previous =
+document.getElementById("previous");
 
 
-    let currentSlide = 0;
+let current = 0;
 
 
-    function showSlide(index) {
+function showSlide(index){
 
-        if (!slides.length) {
-            return;
-        }
+if(!slides.length) return;
 
 
-        if (index >= slides.length) {
-            currentSlide = 0;
-        }
+if(index >= slides.length){
+current = 0;
+}
 
-        else if (index < 0) {
-            currentSlide =
-                slides.length - 1;
-        }
+else if(index < 0){
+current = slides.length - 1;
+}
 
-        else {
-            currentSlide = index;
-        }
+else{
+current = index;
+}
 
 
-        slides.forEach((slide, i) => {
+slides.forEach((slide, i) => {
 
-            slide.classList.toggle(
-                "active",
-                i === currentSlide
-            );
+slide.classList.toggle(
+"active",
+i === current
+);
 
-        });
+});
 
+}
 
-        if (progress) {
 
-            progress.style.width =
-                `${((currentSlide + 1) / slides.length) * 100}%`;
+next?.addEventListener(
+"click",
+() => {
 
-        }
+showSlide(current + 1);
 
+}
+);
 
-        if (counter) {
 
-            counter.textContent =
-                `0${currentSlide + 1} — 0${slides.length}`;
+previous?.addEventListener(
+"click",
+() => {
 
-        }
+showSlide(current - 1);
 
-    }
+}
+);
 
 
-    nextButton?.addEventListener(
-        "click",
-        () => {
+let autoplay =
+setInterval(() => {
 
-            showSlide(
-                currentSlide + 1
-            );
+showSlide(current + 1);
 
-        }
-    );
+}, 6000);
 
 
-    prevButton?.addEventListener(
-        "click",
-        () => {
+const slider =
+document.querySelector(
+".campaign-slider"
+);
 
-            showSlide(
-                currentSlide - 1
-            );
 
-        }
-    );
+if(slider){
 
+slider.addEventListener(
+"mouseenter",
+() => {
 
-    /* CAMBIO AUTOMÁTICO */
+clearInterval(autoplay);
 
-    let autoplay =
-        setInterval(() => {
+}
+);
 
-            showSlide(
-                currentSlide + 1
-            );
 
-        }, 6000);
+slider.addEventListener(
+"mouseleave",
+() => {
 
+autoplay =
+setInterval(() => {
 
-    const carousel =
-        document.querySelector(
-            ".aura-carousel"
-        );
+showSlide(current + 1);
 
+}, 6000);
 
-    if (carousel) {
+}
+);
 
-        carousel.addEventListener(
-            "mouseenter",
-            () => clearInterval(autoplay)
-        );
+}
 
 
-        carousel.addEventListener(
-            "mouseleave",
-            () => {
+showSlide(0);
 
-                autoplay =
-                    setInterval(() => {
 
-                        showSlide(
-                            currentSlide + 1
-                        );
 
-                    }, 6000);
+/* =========================
+   SCROLL REVEAL
+========================= */
 
-            }
-        );
+const elements =
+document.querySelectorAll(
+".intro-content, .editorial-photo, .editorial-message, .campaign-heading, .campaign-slider, .featured-product, .final-cta > div, .catalog-product, .contact-image, .contact-form-area"
+);
 
-    }
 
+if(
+"IntersectionObserver" in window
+){
 
-    /* =========================
-       REVEAL AL SCROLL
-    ========================= */
+const observer =
+new IntersectionObserver(
+(entries) => {
 
-    const revealElements =
-        document.querySelectorAll(
-            ".statement-copy, .editorial-copy, .editorial-image, .visual-header, .aura-carousel, .collection-header, .perfume-feature, .experience-copy, .experience-image, .cta-inner"
-        );
+entries.forEach(entry => {
 
+if(
+entry.isIntersecting
+){
 
-    if (
-        "IntersectionObserver" in window &&
-        revealElements.length
-    ) {
+entry.target.classList.add(
+"visible"
+);
 
-        const observer =
-            new IntersectionObserver(
-                entries => {
+observer.unobserve(
+entry.target
+);
 
-                    entries.forEach(entry => {
+}
 
-                        if (
-                            entry.isIntersecting
-                        ) {
+});
 
-                            entry.target.style.opacity =
-                                "1";
+},
+{
+threshold:.12
+}
+);
 
-                            entry.target.style.transform =
-                                "translateY(0)";
 
-                            observer.unobserve(
-                                entry.target
-                            );
+elements.forEach(element => {
 
-                        }
+element.classList.add(
+"reveal"
+);
 
-                    });
+observer.observe(element);
 
-                },
-                {
-                    threshold: 0.12
-                }
-            );
+});
 
-
-        revealElements.forEach(element => {
-
-            element.style.opacity = "0";
-
-            element.style.transform =
-                "translateY(28px)";
-
-            element.style.transition =
-                "opacity .8s ease, transform .8s ease";
-
-            observer.observe(element);
-
-        });
-
-    }
-
-
-    /* =========================
-       INICIO DEL CARRUSEL
-    ========================= */
-
-    showSlide(0);
+}
 
 });
