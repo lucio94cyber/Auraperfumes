@@ -1,68 +1,597 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/estilos.css">
-    <link rel="shortcut icon" href="../logo/logo.png" type="image/x-icon">
-    <title>AURA perfumes</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Descubrí la colección de perfumes AURA."
+>
+
+<link rel="icon" href="../logo/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+rel="stylesheet"
+>
+
+<link rel="stylesheet" href="../style/estilos.css">
+
+<title>AURA | Colección</title>
+
 </head>
-<body class="body_shop">
-<header class="navs">
 
-    <img src="../logo/logo.png" alt="logo">
 
-    <ul>
-      <li><a href="../../index.html">home</a></li>
-        <li><a href="../pages/shop.html">shop</a></li>
-        <li><a href="../pages/contact.html">contact</a></li>
-    </ul>
+<body class="collection-page">
+
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a
+href="../../index.html"
+class="brand"
+>
+<img
+src="../logo/logo.png"
+alt="AURA Perfumes"
+>
+</a>
+
+
+<nav class="main-nav">
+
+<a href="../../index.html">
+Inicio
+</a>
+
+<a href="./shop.html" class="active">
+Colección
+</a>
+
+<a href="./contact.html">
+Contacto
+</a>
+
+</nav>
+
+
+<a
+href="./shop.html"
+class="discover-button"
+>
+Descubrir
+</a>
+
+
+<button
+class="menu-button"
+id="menuButton"
+aria-label="Abrir menú"
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+</div>
+
+
+<div class="mobile-nav" id="mobileNav">
+
+<a href="../../index.html">
+Inicio
+</a>
+
+<a href="./shop.html">
+Colección
+</a>
+
+<a href="./contact.html">
+Contacto
+</a>
+
+<a
+href="https://wa.me/5491164227116"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+
+</div>
 
 </header>
 
-<main class="shop">
-    <h1>shop</h1>
-    <ul>
-        <li>Aura Éternel<img src="../img/perfume1.png" alt="perfume1"></li>
-        <li>Mystic Bloom<img src="../img/perfume2.png" alt="perfume2"></li>
-        <li>Oasis Nocturno<img src="../img/perfume3.png" alt="perfume3"></li>
-        <li>Cielo Índigo<img src="../img/perfume4.png" alt="perfume4"></li>
-        <li>Esencia Salvaje<img src="../img/perfume5.png" alt="perfume5"></li>
-        <li>Luz de Ámbar<img src="../img/perfume6.png" alt="perfume6"></li>
-    </ul>
-</main>
 
-<section>
-  <a href="https://wa.me/5491164227116" class="whatsapp" target="_blank">
-    <img src="../img/whatsapp.png" alt="whatsapp">
-  </a>
+
+<main>
+
+
+<section class="collection-hero">
+
+<div>
+
+<span>
+AURA / COLECCIÓN
+</span>
+
+<h1>
+Encontrá
+<br>
+tu <em>esencia.</em>
+</h1>
+
+<p>
+Seis fragancias.
+Seis formas de dejar una impresión.
+</p>
+
+</div>
+
 </section>
 
-<footer class="footer">
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                <img src="../img/instagram.png" alt="instagram">
-                </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/?lang=es-419" target="_blank">
-                    <img src="../img/tiktok.png" alt="tiktok">
-                </a>
-                </li>
-                <li>
-                    <a href="https://ar.pinterest.com/" target="_blank">
-                    <img src="../img/pinterest.png" alt="pinterest">
-                </a>
-                </li>
-        </ul>
+
+
+<section class="products-catalog">
+
+
+<div class="catalog-intro">
+
+<span>
+01 — 06
+</span>
+
+<p>
+Una selección creada para distintos momentos,
+personalidades y formas de sentir.
+</p>
+
+</div>
+
+
+
+<div class="catalog-grid">
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+01
+</span>
+
+<img
+src="../img/perfume1.png"
+alt="Aura Éternel"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Aura Éternel
+</h2>
+
+<p>
+Una fragancia elegante y atemporal.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Aura%20Éternel."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+02
+</span>
+
+<img
+src="../img/perfume2.png"
+alt="Mystic Bloom"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Mystic Bloom
+</h2>
+
+<p>
+Misterio, personalidad y carácter.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Mystic%20Bloom."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+03
+</span>
+
+<img
+src="../img/perfume3.png"
+alt="Oasis Nocturno"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Oasis Nocturno
+</h2>
+
+<p>
+Una presencia profunda e intensa.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Oasis%20Nocturno."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+04
+</span>
+
+<img
+src="../img/perfume4.png"
+alt="Cielo Índigo"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Cielo Índigo
+</h2>
+
+<p>
+Una esencia fresca y sofisticada.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Cielo%20Índigo."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+05
+</span>
+
+<img
+src="../img/perfume5.png"
+alt="Esencia Salvaje"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Esencia Salvaje
+</h2>
+
+<p>
+Intensa, libre y con carácter.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Esencia%20Salvaje."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+
+<article class="catalog-product">
+
+<div class="catalog-image">
+
+<span>
+06
+</span>
+
+<img
+src="../img/perfume6.png"
+alt="Luz de Ámbar"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="catalog-info">
+
+<div>
+
+<small>
+AURA
+</small>
+
+<h2>
+Luz de Ámbar
+</h2>
+
+<p>
+Cálida, envolvente y sofisticada.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/5491164227116?text=Hola%20AURA%2C%20quiero%20consultar%20por%20Luz%20de%20Ámbar."
+target="_blank"
+rel="noopener"
+>
+Consultar
+<span>↗</span>
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<section class="catalog-cta">
+
+<span>
+¿NO SABÉS CUÁL ELEGIR?
+</span>
+
+<h2>
+Hablemos de
+<br>
+tu <em>fragancia.</em>
+</h2>
+
+<a
+href="https://wa.me/5491164227116"
+target="_blank"
+rel="noopener"
+class="light-button"
+>
+Consultar por WhatsApp
+<span>↗</span>
+</a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<div class="footer-content">
+
+<div class="footer-brand">
+
+<img
+src="../logo/logo.png"
+alt="AURA"
+>
+
+<p>
+La esencia de una presencia.
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<span>
+EXPLORAR
+</span>
+
+<a href="../../index.html">
+Inicio
+</a>
+
+<a href="./shop.html">
+Colección
+</a>
+
+<a href="./contact.html">
+Contacto
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<span>
+CONTACTO
+</span>
+
+<a
+href="https://wa.me/5491164227116"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+
+<a href="./contact.html">
+Hacer un pedido
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 AURA perfumes
+</span>
+
+<span>
+Diseño y desarrollo web · AlwaysHouse
+</span>
+
+</div>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
-crossorigin="anonymous"></script>
+
+
+
+<a
+href="https://wa.me/5491164227116"
+class="floating-whatsapp"
+target="_blank"
+rel="noopener"
+>
+
+<img
+src="../img/whatsapp.png"
+alt=""
+>
+
+</a>
+
+
+<script src="../javascript/aura.js"></script>
+
 </body>
+
 </html>
